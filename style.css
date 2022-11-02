@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+.header{
+    background-color: aliceblue;
+    height: 800px;
+    width: 100%;
+    
+}
+.menu{
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    color: black;
+    height: 40px;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0,0,0,0.1),
+    inset -5px -5px 3px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+    border-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 10px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.search{
+    border-style: none;
+    border-radius: 5px;
+
+
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0,0,0,0.1),
+    inset -5px -5px 3px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);;
+
+    position: relative;
+    margin-left: auto;
+    margin-right: 80px;
+
+    background-color: aliceblue;
+}
+.text{
+    position: relative;
+    display: block;
+    top: 280px;
+    left: 50px;
+    line-height: 30px;
+    text-align: justify;
+    
+}
+.logo{
+    position: absolute;
+    left: 700px;
+    top: -5px;
+    width: 59.8%;
+}
+@media screen and (max-width: 720px){
+    .logo{
+        position: absolute;
+        left: 80px;
+        top: 80px;
+        background-color:aliceblue;
+        border-radius: 30px;
+
+        box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+        15px 15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 3px rgba(255, 255, 255, 0.2),
+        inset 5px 5px 5px rgba(0, 0, 0, 0.1);;
+    }
+    .text{
+        top: 400px;
+
+
+    }
+    h1{
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 10px black;
+
+    }
+    p{
+        position: relative;
+        top: 30px;
+        text-shadow: 2px 2px 10px black;
+
+    }
+    .search{
+        margin-right: 20px;
+    }
+}
+
